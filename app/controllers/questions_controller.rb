@@ -4,14 +4,12 @@ class QuestionsController < ApplicationController
 
   def answer
     @input = params[:input]
-    # raise
-    if @input == "I am going to work"
-      @answer = "Great!"
+    if @input == 'I am going to work'
+      @answer = 'Great! Watching you participate in the capitalist machine makes me horny!'
     elsif @input.include?('?')
-      @answer = "Silly question, get dressed and go to work!"
-    elsif @input != "I am going to work"
-      @answer = "I don't care, get dressed and go to work!"
+      @answer = 'Silly question! Get dressed and go to work, commie!'
+    elsif @input != 'I am going to work'
+      @answer = "I don't care! Get dressed and go to work, you filthy communist!"
     end
-    # raise
   end
 end
